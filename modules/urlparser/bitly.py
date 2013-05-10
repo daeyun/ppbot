@@ -17,7 +17,7 @@ class Bitly(object):
 
     """
 
-    pattern = re.compile("http://([^ ]+)")
+    pattern = re.compile("http://([^ ].{60,})")
 
     def __init__(self, *args, **kwargs):
         """Constructor."""
